@@ -12,5 +12,4 @@ def add_netns_segment(powerline):
     env_name = os.path.basename(env)
     bg = Color.VIRTUAL_ENV_BG
     fg = Color.VIRTUAL_ENV_FG
-    powerline.append('NS: %s ' % env_name, fg, bg)
-
+    powerline.append(' NS %s ' % env_name, fg, bg)
