@@ -1,6 +1,6 @@
 import subprocess
 
-def add_virtual_env_segment(powerline):
+def add_netns_segment(powerline):
     env = subprocess.check_output(['ip', 'netns', 'identify', "$$"], stderr=subprocess.STDOUT)
     if env is None:
         return
